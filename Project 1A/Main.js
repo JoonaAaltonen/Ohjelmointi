@@ -1,9 +1,33 @@
-//Write Code here in JavaScript
-var TextBox1 = document.getElementById("TextBox1").innerHTML;
-var TextBox2 = document.getElementById("TextBox2").innerHTML;
-var TextBox3 = document.getElementById("TextBox3").innerHTML;
-var Button1 = document.getElementById("Button1").innerHTML;
+  function OnCLickEvent() {
+    //Ottaa id
+    function tarkista(form)
+    {
+    var sähköposti = form.sähköposti.value;
+    var käyttäjätunnus = form.Käyttäjätunnus.value;
+    var käyttäjäSalasana = form.KäyttäjäSalasana.value;
 
-if (TextBox1.value = ""){
-alert("Et Ole kirjoitanut mitään tunnusta");
+//Tämä katsoo jos olet kirjoitanut mitään
+    if (käyttäjätunnus.value == "") {
+      alert("Et ole kirjoitanut mitään tunnusta");
+      if (käyttäjätunnus.length < 5){
+        alert("Vähintää viisi kirjainta")
+      }
+  } else if (käyttäjäSalasana.length < 5) {
+        alert("Vähintää viisi kirjainta")
+  } else if (sähköposti.value == ""){
+      alert("Et ole kirjoitanut mitään Sähköpostia");
+      let Mail = sähköposti.value;
+      var ehdot = /\S+@\S+/;
+      if (!ehdot.test(Mail))
+      {
+        alert("Anna Kunnon Sähköposti");
+      }
+
+  } else {
+      if (checkbox1.checked == true) {
+        //qe
+      }
+
+    }
+  }
 }
