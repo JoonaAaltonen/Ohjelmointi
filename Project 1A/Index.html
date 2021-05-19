@@ -21,6 +21,17 @@
 <input type="checkbox" id="checkbox1" name=Checkboxteachercheck>
 
 <script type="text/javascript">
+
+function validateEmail (emailAdress)
+{
+  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (emailAdress.match(regexEmail)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
   function OnCLickEvent() {
     //Ottaa id
     var TextBox1 = document.getElementById("TextBox1");
@@ -35,10 +46,18 @@
       alert("Et ole kirjoitanut mitään Salasana");
   } else if (TextBox3.value == ""){
       alert("Et ole kirjoitanut mitään Sähköpostia");
+      if ()
+
+
+
+
+
+
+
   } else {
     if (checkbox1.checked == true) {
         //qe
-        
+
     }
 
   }
