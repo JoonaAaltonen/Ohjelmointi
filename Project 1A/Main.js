@@ -31,3 +31,5 @@
     }
   }
 }
+var taulukko = [10, 45, 63];
+var taulukko[1];
